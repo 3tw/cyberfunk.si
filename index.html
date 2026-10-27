@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>c y b e r * f u n k</title>
+  <title>c y b e r f u n k</title>
   <style>
     html, body { margin: 0; background: #fff; }
     body {
@@ -25,16 +25,9 @@
       width: auto;
       height: auto;
     }
-    /* Sits over the painted "join waitlist" label */
-    .cta {
-      position: absolute;
-      left: 33%;
-      top: 82.5%;
-      width: 45%;
-      height: 10%;
-      border-radius: 12px;
-    }
-    .cta:focus-visible { outline: 3px solid #1a1aff; outline-offset: 2px; }
+    /* The whole page is the link */
+    .cta { position: fixed; inset: 0; }
+    .cta:focus-visible { outline: 3px solid #1a1aff; outline-offset: -6px; }
   </style>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="d8292ded-0f8b-4b6d-9e6d-6fc81d396977"></script>
 </head>
