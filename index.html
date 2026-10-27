@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyberfunk</title>
+  <style>
+    html, body { margin: 0; background: #fff; }
+    body {
+      --pad: clamp(16px, 4vmin, 48px);
+      box-sizing: border-box;
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding: var(--pad);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .art { position: relative; line-height: 0; }
+    .art img {
+      display: block;
+      max-width: 100%;
+      max-height: calc(100vh - 2 * var(--pad));
+      max-height: calc(100dvh - 2 * var(--pad));
+      width: auto;
+      height: auto;
+    }
+    /* Sits over the painted "join waitlist" label */
+    .cta {
+      position: absolute;
+      left: 33%;
+      top: 82.5%;
+      width: 45%;
+      height: 10%;
+      border-radius: 12px;
+    }
+    .cta:focus-visible { outline: 3px solid #1a1aff; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <div class="art">
+    <img src="bg.jpg" width="1446" height="2000" alt="Watercolor painting with the word soon">
+    <a class="cta" href="https://imprecise.substack.com/subscribe" aria-label="Join waitlist"></a>
+  </div>
+</body>
+</html>
