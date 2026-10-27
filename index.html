@@ -28,15 +28,16 @@
     /* The whole page is the link */
     .cta { position: fixed; inset: 0; }
     .cta:focus-visible { outline: 3px solid #1a1aff; outline-offset: -6px; }
-    /* Invisible box over the painted "join waitlist" label, used to pop the cursor */
+    /* Outlined box over the painted "join waitlist" label; also pops the cursor */
     .hotspot {
       position: absolute;
       left: 33%;
       top: 82.5%;
       width: 45%;
       height: 10%;
+      box-sizing: border-box;
+      border: 2px solid #eb1874;
       pointer-events: none;
-      visibility: hidden;
     }
 
     #cursor {
@@ -56,14 +57,14 @@
         margin-top: -50%;
         margin-left: -50%;
         border-radius: 50%;
-        border: solid 1.5px #d96c29;
+        border: solid 2.5px #eb1874;
         transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease),
           width 0.45s var(--pop), height 0.45s var(--pop);
       }
       #cursor.arrow .cursor__circle {
         width: 128px;
         height: 128px;
-        background-color: #d96c29;
+        background-color: #eb1874;
       }
       #cursor.arrow::after {
         content: '';
